@@ -1,0 +1,14 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "lldb",
+      "request": "launch",
+      "name": "RISC-V Debug",
+      "preLaunchTask": "qemu",
+      "targetCreateCommands": ["target create ${workspaceFolder}/BareMetalMain"],
+      "processCreateCommands": ["gdb-remote 1234"],
+      "stopOnEntry": true
+    }
+  ]
+}
